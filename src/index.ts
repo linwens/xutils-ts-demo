@@ -1,1 +1,4 @@
-export const Greeter = (name: string) => `Hello ${name}`
+import Greeter from './greeter'
+import ArrayEach from './arrayEach'
+
+export { Greeter, ArrayEach }
