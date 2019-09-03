@@ -1,6 +1,6 @@
 {
   "name": "xutils-ts-demo",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "抄袭lodash逻辑，基于ts写的工具集",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
