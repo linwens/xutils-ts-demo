@@ -7,6 +7,7 @@ src/
 .gitignore
 .huskyrc
 .prettierrc
+.travis.yml
 
 commitlint.config.js
 jestconfig.json
