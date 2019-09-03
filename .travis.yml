@@ -7,8 +7,8 @@ node_js:
 script:
   - npm run test
 after_success:
-  - cat ./__test__/coverage/lcov.info | ./node_modules/.bin/coveralls -repotoken $REPO_TOKEN
-  - rm -rf ./__test__/coverage
+  - cat ./src/__test__/coverage/lcov.info | ./node_modules/.bin/coveralls -repotoken $REPO_TOKEN
+  - rm -rf ./src/__test__/coverage
 
 # 发布npm包、生成gh-page
 node_js: "8"
