@@ -1,0 +1,14 @@
+.DS_Store
+node_modules
+doc/
+src/
+.czrc
+.editorconfig
+.gitignore
+.huskyrc
+.prettierrc
+
+commitlint.config.js
+jestconfig.json
+tsconfig.json
+tslint.json
