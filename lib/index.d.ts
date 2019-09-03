@@ -1,3 +1,6 @@
-import Greeter from './greeter';
 import ArrayEach from './arrayEach';
-export { Greeter, ArrayEach };
+declare const _default: {
+    Greeter: (name: string) => string;
+    ArrayEach: typeof ArrayEach;
+};
+export default _default;

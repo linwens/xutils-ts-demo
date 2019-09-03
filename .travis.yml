@@ -1,0 +1,23 @@
+# after_success：执行完测试后，发布到GitHub pages
+
+sudo: false
+language: node_js
+node_js:
+  - stable
+script:
+  - npm run test
+after_success:
+  - cat ./__test__/coverage/lcov.info | ./node_modules/.bin/coveralls -repotoken $REPO_TOKEN
+  - rm -rf ./__test__/coverage
+
+# 发布npm包、生成gh-page
+node_js: "8"
+deploy:
+  provider: npm
+  email: "$NPM_EMAIL"
+  skip_cleanup: true
+  api_key: "$NPM_TOKEN"
+  on:
+    tags: true # git tag 打标签才发包
+    # branch: master # master分支push才发包
+  tag: latest
