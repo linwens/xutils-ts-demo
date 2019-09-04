@@ -11,12 +11,12 @@ interface IOption {
  */
 
 function debounce(func: Func, wait: number = 0, options: IOption = {}): Func {
-    let lastArgs: any; /* 上次调用参数 */
-    let lastThis: any; /* 上次调用this */
-    let maxWait: number = 0; /* 最大等待时间 */
-    let result: any; /* 返回结果 */
-    let timerId: number | undefined; /* 定时器Id */
-    let lastCallTime: number | undefined; /* 上次触发debounced的时间 */
+    let lastArgs: any /* 上次调用参数 */
+    let lastThis: any /* 上次调用this */
+    let maxWait: number = 0 /* 最大等待时间 */
+    let result: any /* 返回结果 */
+    let timerId: number | undefined /* 定时器Id */
+    let lastCallTime: number | undefined /* 上次触发debounced的时间 */
 
     let lastInvokeTime = 0 /* 上次调用func时间 */
     let leading: boolean = false /* 超时之前 */
