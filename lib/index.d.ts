@@ -1,3 +1,4 @@
 import Greeter from './greeter';
 import ArrayEach from './arrayEach';
-export { Greeter, ArrayEach };
+import DeBounce from './debounce';
+export { Greeter, ArrayEach, DeBounce };
