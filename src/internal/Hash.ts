@@ -1,10 +1,10 @@
 const HASH_UNDEFINED = '__lodash_hash_undefined__'
 
 class Hash {
-    private __data__ = Object.create(null)
-    private size = 0
+    __data__ = Object.create(null)
+    size = 0
 
-    constructor(entries: any[]) {
+    constructor(entries?: any[]) {
         let index = -1
         const length = entries == null ? 0 : entries.length
 
