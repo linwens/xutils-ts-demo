@@ -1,4 +1,6 @@
 import Greeter from './greeter';
 import ArrayEach from './arrayEach';
 import DeBounce from './debounce';
-export { Greeter, ArrayEach, DeBounce };
+import eq from './eq';
+import add from './add';
+export { Greeter, ArrayEach, DeBounce, eq, add };
