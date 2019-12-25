@@ -13,7 +13,7 @@ const NaN = 0 / 0
 function meanBy(array: any[], iteratee: Func) {
     const length = array == null ? 0 : array.length
     // 总和 / 总数 = 平均值
-    return length ? baseSum(array, iteratee) as any / length : NaN
+    return length ? (baseSum(array, iteratee) as any) / length : NaN
 }
 
 export default meanBy
