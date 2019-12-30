@@ -8,5 +8,9 @@ import divide from './divide'
 import mean from './mean'
 import meanBy from './meanBy'
 import map from './map'
+import chunk from './chunk'
+import slice from './slice'
+import toNumber from './toNumber'
+import isObject from './isObject'
 
-export { Greeter, ArrayEach, DeBounce, eq, add, ceil, divide, mean, meanBy, map }
+export { Greeter, ArrayEach, DeBounce, eq, add, ceil, divide, mean, meanBy, map, chunk, slice, toNumber, isObject }
